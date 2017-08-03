@@ -3,8 +3,7 @@
 
 
 //  ======== Base
-@import "dev/base/_grid.scss";
-@import "dev/base/_normalize.scss";
+@import "dev/_bootstrap.scss";
 @import "dev/base/_fonts.scss";
 
 
@@ -18,6 +17,7 @@
 // ========= Vendors
 @import "dev/vendors/_fancybox.scss";
 @import "dev/vendors/_bxSlider.scss";
+@import "dev/vendors/awesome/font-awesome.scss";
 
 
 // ========= Layouts
