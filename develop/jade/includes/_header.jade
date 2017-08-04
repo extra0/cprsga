@@ -16,6 +16,9 @@ header.header
 			.col-xs-12
 				.header__menu
 					ul.header__menu-list
-						each item in mainMenu
+						each item, i in mainMenu
 							li.header__menu-list-item
-								a.header__menu-list-item-link(href="#!") #{item}
+								if (i==2)
+									a.header__menu-list-item-link.current(href="#!") #{item}
+								else
+									a.header__menu-list-item-link(href="#!") #{item}

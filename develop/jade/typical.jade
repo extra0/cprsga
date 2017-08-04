@@ -1,0 +1,173 @@
+extends includes/_layout
+block append head
+	meta(name="description" content="")
+	meta(name="keywords" content="")
+	title Второстепенная страница
+block content
+	.container
+		.flex-section
+			.flex-section__sidebar
+				.flex-section__sidebar-block
+					.flex-section__sidebar-block-title Сертификаяция АСТИО
+					ul.flex-section__sidebar-menu
+						each item, i in sideMenu
+							li.flex-section__sidebar-menu-item
+								if (i == 0) 
+									a.flex-section__sidebar-menu-item-link.current(href="#!") #{item}
+								else 
+									a.flex-section__sidebar-menu-item-link(href="#!") #{item}
+				.flex-section__sidebar-block.flex-section__sidebar-block--light-blue
+					.flex-section__sidebar-block-title ЦПРС ГА в цифрах
+					table.flex-section__sidebar-block-table
+						tr
+							td 189
+							td Аэропортов
+						tr
+							td 25 000
+							td Учеников
+						tr
+							td 38
+							td Специалистов
+						tr
+							td 20
+							td Лет работы
+				.flex-section__sidebar-block.flex-section__sidebar-block--yellow
+					.flex-section__sidebar-block-title.flex-section__sidebar-block-title--black Отзывы
+					.flex-section__sidebar-feedback
+						.flex-section__sidebar-feedback-title Заголовок отзыва
+						.flex-section__sidebar-feedback-preview Заказчик быстро понял и грамотно выполнил поставленную задачу в указанные сроки! При этом объясняя детали процесса при необходимости. Рекомендую!
+						.flex-section__sidebar-feedback-author 
+							i.fa.fa-commenting.color-ruby.fa-lg
+							|  Иван Иванов
+						a.btn.btn-default.btn-lg(href="#!") Все отзывы
+			.flex-section__content
+				include includes/components/_breadcrumbs
+				h1 H1 Что мы делаем
+				h2 H2 Что мы делаем
+				h3 H3 Что мы делаем
+				br
+				h4 H4 Что мы делаем
+				br
+				h5 H5 Что мы делаем
+				br
+				h6 H6 Что мы делаем
+				hr
+				.form-group
+					input#checkbox-1(type="checkbox" checked)
+					label(for="checkbox-1") алкогольные напитки
+				.form-group
+					input#checkbox-2(type="checkbox")
+					label(for="checkbox-2") безалкогольные напитки
+				hr
+				.form-group
+					input#radio-1(type="radio" name="radio" checked)
+					label(for="radio-1") алкогольные напитки
+				.form-group
+					input#radio-2(type="radio" name="radio")
+					label(for="radio-2") безалкогольные напитки
+				hr
+				form(action="")
+					.form-group
+						input.form-control(type="text")
+					.form-group
+						input.form-control(type="text")
+					.form-group
+						input.form-control(type="email")
+				a.btn.btn-lg.btn-default(href="#!" style="margin-right: 10px;") Отправить
+				a.btn.btn-lg.btn-danger(href="#!") Отправить
+				hr
+				.row
+					.col-sm-6
+						ul
+							li УЗИ диагностика
+							li Акушерство и гинекология
+							li Гинекология
+							li Кардиология
+							li Косметология
+							li Терапия
+							li Справки и медицинская документация
+							li Урология
+							li Эндокринология
+							li ЭКГ						
+					.col-sm-6
+						ol
+							li УЗИ диагностика
+							li 13123
+								ol
+									li УЗИ диагностика
+									li Акушерство и гинекология
+									li Гинекология
+									li Кардиология
+									li Косметология
+									li Терапия
+									li Справки и медицинская документация
+									li Урология
+									li Эндокринология
+									li ЭКГ	
+							li Гинекология
+							li Кардиология
+							li Косметология
+							li Терапия
+							li Справки и медицинская документация
+							li Урология
+							li Эндокринология
+							li ЭКГ		
+				p Многие считают, что те, кому 20 с небольшим, ведут невероятно активную интимную жизнь и меняют партнеров как перчатки, однако новое исследование показало, что в большинстве случаев это совсем не так. В ходе исследования были проанализированы данные соцопросов, проведенных в период с 1972 по 2014 год, в которых в общей сложности участвовали более 26 000 людей. Респондентов расспрашивали об их сексуальной жизни и о том, сколько партнеров у них было после достижения 18-летнего возраста. Исследователи обнаружили, что 41% опрошенных представителей поколения 90-х вообще не имели интимной связи после 18 лет, в то время как более взрослые
+				hr
+				script(type="text/javascript" src="//vk.com/js/api/openapi.js?146")
+				script.
+					VK.Widgets.Group("vk_groups", {mode: 3, height: "200", width: "auto"}, 20003922);	
+				#vk_groups
+				hr
+				table.table.table-striped
+					tr.danger
+						td #
+						td First Name
+						td Last Name
+						td Username
+					tr
+						td 1
+						td Mark
+						td Otto
+						td @mdo
+					tr
+						td 2
+						td Jacob
+						td Thornton
+						td @fat
+					tr
+						td 3
+						td Larry
+						td the Bird
+						td @twitter
+				hr
+				.share-block
+					span.share-block__title Поделиться: 
+					script.
+						(function() {
+						  if (window.pluso)if (typeof window.pluso.start == "function") return;
+						  if (window.ifpluso==undefined) { window.ifpluso = 1;
+						    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+						    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+						    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+						    var h=d[g]('body')[0];
+						    h.appendChild(s);
+						  }})();
+					.pluso(data-background="none;" data-options="small,square,line,horizontal,nocounter,sepcounter=1,theme=14" data-services="vkontakte,odnoklassniki,facebook,twitter,google")
+				hr
+				.block-with-text
+					img.block-with-text__img(src="img/content/img.jpg", alt="")
+					.block-with-text__value Рассказывает директор по франчайзингу Камзолов Сергей Николаевич.
+				hr
+				.blockqoute
+					span.blockqoute__text Наша компания участвует в выставке BuyBrand уже не первый год. Да, интерес к нашей компании всегда был, но этот год показал, что медицинский бизнес является одним из самых стабильных и эффективных в условиях экономического спада. 
+					span.blockqoute__author
+						i.fa.fa-commenting.fa-lg.color-ruby
+						|  рассказывает директор по франчайзингу Камзолов Сергей Николаевич.
+				hr
+				.blockqoute-wrap
+					.blockqoute
+						span.blockqoute__text Наша компания участвует в выставке BuyBrand уже не первый год. Да, интерес к нашей компании всегда был, но этот год показал, что медицинский бизнес является одним из самых стабильных и эффективных в условиях экономического спада. 
+						span.blockqoute__author
+							i.fa.fa-commenting.fa-lg.color-ruby
+							|  рассказывает директор по франчайзингу Камзолов Сергей Николаевич.
