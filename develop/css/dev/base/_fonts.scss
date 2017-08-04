@@ -1,1 +1,12 @@
-@include font-face(" ", "../fonts/", bold, italic, $file-formats: ttf eot svg);
+@include font-face("Segoe UI", "../fonts/segoeui", normal, normal, $file-formats: ttf);
+@include font-face("Segoe UI", "../fonts/segoeuib", bold, normal, $file-formats: ttf);
+@include font-face("Segoe UI", "../fonts/segoeuii", normal, italic, $file-formats: ttf);
+@include font-face("Segoe UI", "../fonts/segoeuil", 300, normal, $file-formats: ttf);
+@include font-face("Segoe UI", "../fonts/segoeuiz", 800, normal, $file-formats: ttf);
+@include font-face("Segoe UI", "../fonts/seguibli", 900, normal, $file-formats: ttf);
+@include font-face("Segoe UI", "../fonts/seguili", 300, italic, $file-formats: ttf);
+@include font-face("Segoe UI", "../fonts/seguisb", 600, normal, $file-formats: ttf);
+@include font-face("Segoe UI", "../fonts/seguisbi", 600, italic, $file-formats: ttf);
+@include font-face("Segoe UI Symbol", "../fonts/seguisym", normal, normal, $file-formats: ttf);
+@include font-face("Segoe UI Emoji", "../fonts/seguiemj", normal, normal, $file-formats: ttf);
+@include font-face("Segoe UI Historic", "../fonts/seguihis", normal, normal, $file-formats: ttf);

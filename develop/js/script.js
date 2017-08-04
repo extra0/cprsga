@@ -1,5 +1,5 @@
 $(function(){
 
 	// вызов фенсибокса
-	$('[fancybox]').fancybox();
+	$('.js-fancybox').fancybox();
 });

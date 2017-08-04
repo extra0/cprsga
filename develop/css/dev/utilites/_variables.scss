@@ -1,4 +1,32 @@
 // ---------------------  Variables
 
-$main_font: '', sans-serif;
+$main_font: 'Segoe UI', sans-serif;
 $main_color: #000;
+
+
+// --------- font-size: 
+$symbol: 'Segoe UI Symbol', sans-serif;
+$emoji: 'Segoe UI Emoji', sans-serif;
+$historic: 'Segoe UI Historic', sans-serif;
+
+
+// --------- Colors
+$ruby: #ff3333;
+$lightRuby: #faedec;
+$darkBlue: #1c2439;
+$blue: #5a93e0;
+$lightBlue: #2f425e;
+$yellow: #f5dd00;
+$gray: #e8e8e8;
+
+
+// --- MIXIN
+
+@mixin awesome {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,108 @@
+.header {
+	background: $darkBlue;
+	padding: 25px 0 0;
+	color: #fff;
+	// TOP 
+	&__address {
+		display: block;
+		position: relative;
+		font-size: 20px;
+		margin: -3px 0 12px -3px;
+		&:before {
+			content: "";
+			@include position(absolute, 4px null null -34px);
+			@include awesome;
+			color: $ruby;
+		}
+	}
+	&__link {
+		position: relative;
+		border-bottom: 1px solid $ruby;
+		color: #fff;
+		font-size: 20px;
+		&:hover,
+		&:focus {
+			color: #fff;
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+			outline: none;
+		}
+		&--email {
+			&:before {
+			    content: "";
+				@include position(absolute, 6px null null -43px);
+				@include awesome;
+				color: $ruby;
+			}
+		}
+		&--user {
+			font-size: 18px;
+			margin-left: 44px;
+			&:before {
+		        content: "";
+				@include position(absolute, 1px null null -38px);
+				@include awesome;
+				color: $ruby;
+				font-size: 23px;
+			}
+		}
+	}
+	&__phones {
+		text-align: right;
+		margin: -11px 0 15px 0;
+		position: relative;
+		&:before {
+            content: "";
+			@include position(absolute, 9px null null 6px);
+			@include awesome;
+			color: $ruby;
+			font-size: 23px;
+		}
+		&-value {
+			color: #fff;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 39px;
+			display: block;
+			&:hover,
+			&:focus {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+	// MENU
+	&__menu {
+		margin-top: 26px;
+		&-list {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			@include display(flex);
+			@include justify-content(space-between);
+			@include align-items(flex-start);
+			&-item {
+				width: 100%;
+				text-align: center;
+				&-link {
+					// margin-left: -4px;
+					color: #fff;
+					font-size: 16px;
+					// width: 100%;
+					padding: 17px 10px;
+					display: block;
+					border-top: 2px solid #2d3854;
+					text-transform: uppercase;
+					@include transition(all 0.2s ease-in-out);
+					&.current,
+					&:focus,
+					&:hover {
+						text-decoration: none;
+						color: #fff;
+						border-color: $ruby;
+					}
+				}
+			}
+		}
+	}
+}
