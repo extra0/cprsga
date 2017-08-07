@@ -141,7 +141,7 @@ block content
 						td the Bird
 						td @twitter
 				hr
-				.share-block
+				//- .share-block
 					span.share-block__title Поделиться: 
 					script.
 						(function() {
@@ -171,3 +171,54 @@ block content
 						span.blockqoute__author
 							i.fa.fa-commenting.fa-lg.color-ruby
 							|  рассказывает директор по франчайзингу Камзолов Сергей Николаевич.
+				hr
+				.h3 Комментарии
+				.review-section
+					- for (i=1;i<=3;i++) {
+						.review-section__block
+							img.review-section__block-img(src="img/content/ava.jpg", alt="")
+							.review-section__block-rating
+								button.review-section__block-rating-btn.pull-left +
+								span.review-section__block-rating-value 4
+								button.review-section__block-rating-btn.pull-right -
+							.review-section__block-description
+								.review-section__block-description-author Иван Иванов
+								.review-section__block-description-text Многие считают, что те, кому 20 с небольшим, ведут невероятно активную интимную жизнь и меняют партнеров как перчатки, однако новое исследование показало, что в большинстве случаев это совсем не так. В ходе исследования были проанализированы данные соцопросов, проведенных в период с 1972 по 2014 
+					- }
+					.review-section__block
+						img.review-section__block-img(src="img/content/ava.jpg", alt="")
+						.review-section__block-description
+							form(action="#!")
+								.form-group
+									textarea.review-section__block-description-area(name="" rows="4" placeholder="Оставить комментарий" required)
+								.form-group
+									button.btn.btn-danger.btn-lg(type="button") Комментировать
+				hr
+				h2 H2 Курсы
+				p Помимо обучения в классе возможно дистанционное прохождение курса. Стоимость при этом не меняется (к тому же нет необходимости оплачивать гостиницу и командировочные), а кроме того онлайн обучение можно начать в любой удобный день.
+				h3 Список программ
+				.programm-accordion(role="tablist" aria-multiselectable="true" id="accordion")
+					- for (i=1;i<=7;i++) {
+						.programm-accordion__item
+							.programm-accordion__item-header.collapsed(data-toggle="collapse" data-parent="#accordion" href="#collapse-#{i}" aria-expanded="true" aria-controls="collapse-#{i}")
+								.programm-accordion__item-header-img(style="background: url(../img/content/list.jpg) center no-repeat")
+								.programm-accordion__item-header-title
+									.programm-accordion__item-header-close Cвернуть
+									i.fa.fa-lg.fa-angle-right
+									| Служба ИАС
+								.programm-accordion__item-header-preview Инженерно-авиационная
+							.programm-accordion__item-body.collapse(id="collapse-#{i}" role="tabpanel" aria-labelledby="item-#{i}")
+								- for (k=1;k<=4;k++) {
+									.programm-accordion__item-body-block
+										.programm-accordion__item-body-block-title Программа 1
+										.programm-accordion__item-body-block-preview Руководящийсостав и специалистов в области пож. безопасности и пожарно-технического минимума щийсостав и специалистов в области пож. безопасности
+										.programm-accordion__item-body-block-price
+											span.programm-accordion__item-body-block-price-old
+												| 35 000
+												i.fa.fa-rub
+											span.programm-accordion__item-body-block-price-current.programm-accordion__item-body-block-price-current--action
+												| 35 000
+												i.fa.fa-rub
+											a.programm-accordion__item-body-block-price-order.btn.btn-danger.btn-lg(href="#!") Заказать обучение
+								- }
+					- }

@@ -10,3 +10,6 @@
 @include font-face("Segoe UI Symbol", "../fonts/seguisym", normal, normal, $file-formats: ttf);
 @include font-face("Segoe UI Emoji", "../fonts/seguiemj", normal, normal, $file-formats: ttf);
 @include font-face("Segoe UI Historic", "../fonts/seguihis", normal, normal, $file-formats: ttf);
+@include font-face("Circle", "../fonts/Circe-Bold", bold, normal, $file-formats: ttf);
+@include font-face("Circle", "../fonts/Circe-Regular", normal, normal, $file-formats: ttf);
+@include font-face("Circle", "../fonts/Circe-Light", 300, normal, $file-formats: ttf);
