@@ -1,0 +1,14 @@
+extends includes/_layout
+block append head
+	meta(name="description" content="")
+	meta(name="keywords" content="")
+	title Страница 404
+block content
+	.container
+		.error-page
+			.error-page__title 404
+			.error-page__text Что то пошло не так и эта страница улетела.
+			.error-page__text Хм... мы до сих пор не можем ее найти.
+			br
+			br
+			a.btn.btn-danger(href="/") Вернуться на главную

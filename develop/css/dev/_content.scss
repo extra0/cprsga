@@ -469,3 +469,24 @@
 		}
 	}
 }
+.error-page {
+	padding: 60px 0 80px;
+	position: relative;
+	text-align: center;
+	&:before {
+		content: '';
+		@include position(absolute, null null 0 0px);
+		background: url(../img/plane.png) 0 0 no-repeat;
+		width: 268px;
+		height: 225px;
+		pointer-events: none;
+	}
+	&__title {
+		font-size: 130px;
+		font-weight: bold;
+		color: $ruby
+	}
+	&__text {
+		font-size: 18px;
+	}
+}

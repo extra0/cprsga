@@ -2,6 +2,8 @@
 	background: $darkBlue;
 	padding: 25px 0 0;
 	color: #fff;
+	width: 100%;
+	z-index: 300;
 	// TOP 
 	&__address {
 		display: block;
@@ -63,7 +65,7 @@
 			font-weight: bold;
 			font-size: 30px;
 			line-height: 39px;
-			display: block;
+			display: inline-block;
 			&:hover,
 			&:focus {
 				color: #fff;
