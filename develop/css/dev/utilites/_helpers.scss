@@ -36,6 +36,13 @@
 
 .bg-ruby { background: $ruby;}
 
+body {
+	padding-right: 0 !important;
+}
+body.modal-open {
+	padding-right: 17px!important;
+}
+
 ol:not([class]) {
 	list-style: none; 
 	counter-reset: li; 
@@ -281,5 +288,56 @@ input[type="radio"] {
 	}
 	&--error {
 		border-color: $ruby;
+	}
+}
+button.close {
+	width: 31px;
+	height: 31px;
+	background: $darkBlue;
+	opacity: 0.8;
+	border-radius: 50%;
+	color: #fff;
+	@include transition(all 0.2s ease-in-out);
+	span {
+		position: relative;
+		line-height: 13px;
+		vertical-align: top;
+	}
+	&:focus,
+	&:hover {
+		opacity: 1;
+		background: $ruby;
+		color: #fff;
+	}
+}
+.modal--dark {
+	color: #fff;
+	.modal-content {
+		background: $darkBlue;
+		color: #fff;
+	}
+	.modal-title {
+		color: #fff!important;
+	}
+	button.close {
+		background: $ruby;
+	}
+}
+.modal {
+	&-link {
+		color: $blue;
+		border-bottom: 1px solid $blue;
+		@include transition(all 0.2s ease-in-out);
+		&:hover,
+		&:focus {
+			color: $blue;
+			border-bottom: 1px solid transparent;
+			text-decoration: none;
+		}
+	}
+	&-note {
+		color: #fff;
+		display: block;
+		margin-bottom: 5px;
 	}
 }

@@ -1,0 +1,66 @@
+// вход на сайт
+.modal.modal--dark.fade#enter(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span x
+				.modal-title.h4 Вход на сайт
+			.modal-body
+				form(action="#!")
+					.form-group
+						input.form-control(type="email" placeholder="Ваш email" required)
+					.form-group
+						input.form-control(type="password" placeholder="Пароль" required)
+					.form-group.text-center
+						button.btn.btn-default.color-white(type="submit") Войти
+				.row.text-center
+					.col-sm-6.m-b-20
+						.modal-note Не зарегистрированы?
+						a.modal-link(role="button" data-dismiss="modal" data-toggle="modal" data-target="#registration") Зарегистрироваться	
+					.col-sm-6.m-b-20
+						.modal-note Забыли пароль?
+						a.modal-link(role="button"  data-dismiss="modal" data-toggle="modal" data-target="#forgot") Восстановить
+// / вход на сайт
+
+// Восстановление пароля
+.modal.modal--dark.fade#forgot(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span x
+				.modal-title.h4 Восстановление
+			.modal-body
+				form(action="#!")
+					.form-group
+						input.form-control(type="email" placeholder="Ваш email" required)
+					.form-group.text-center
+						button.btn.btn-default.color-white(type="submit") Восстановить
+				.row.text-center
+					.col-sm-12.m-b-20
+						.modal-note Вспомнил пароль?
+						a.modal-link(role="button" data-dismiss="modal" data-toggle="modal" data-target="#enter") Войти
+// / Восстановление пароля
+
+// вход на сайт
+.modal.modal--dark.fade#registration(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span x
+				.modal-title.h4 Регистрация на сайте
+			.modal-body
+				form(action="#!")
+					.form-group
+						input.form-control(type="email" placeholder="Ваш email" required)
+					.form-group
+						input.form-control(type="password" placeholder="Придумайте пароль" required)
+					.form-group.text-center
+						button.btn.btn-default.color-white(type="submit") Регистрация
+				.row.text-center
+					.col-sm-12.m-b-20
+						.modal-note Уже зарегистрированы?
+						a.modal-link(role="button" data-dismiss="modal"  data-toggle="modal" data-target="#enter") Войти	
+// / вход на сайт

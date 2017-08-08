@@ -1,4 +1,10 @@
 @media (max-width: 767px) {
+	body {
+		padding: 0 !important;
+		&.modal-open {
+			padding: 0 !important;
+		}
+	}
 	.main-wrapper:before {
 		display: none;
 	}
