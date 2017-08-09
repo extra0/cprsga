@@ -1,36 +1,75 @@
-footer.footer
-	.container
-		.footer-top
-			.footer-top__sidebar.hidden-xs
-				img.footer__logo(src="img/logo-dark.png", alt="")
-			.footer-top__content
-				ul.footer__menu
-					each item in mainMenu
-						li.footer__menu-item
-							a.footer__menu-item-link(href="#!") #{item}
-		.footer-bottom
-			.row
-				.col-sm-3
-					.footer-bottom__copyright 2017 © ОУ “ЦПРС ГА”
-				.col-sm-5
-					.footer-bottom__phone
-						i.fa.fa-phone.color-ruby.fa-lg
-						a.footer-bottom__phone-value(href="tel:+123") #{phone1}
-						span.footer-bottom__phone-devider ,
-						a.footer-bottom__phone-value(href="tel:+123") #{phone2}
-					.footer-bottom__address
-						i.fa.fa-map-marker.color-ruby.fa-lg
-						span.footer-bottom__address-value Московская область, г. Долгопрудный, ул. Промышленный проезд, д.14
-				.col-sm-2
-					a.footer-bottom__email(href="mailto:#{email}") 
-						i.fa.fa-envelope.color-ruby
-						| #{email}
-				.col-sm-2
-					a(href="http://www.dvaslona.com/" target="_blank")
-						.footer-development
-							.footer-development__block
-								.footer-development__img
-								.footer-development__text
-								.footer-development__red-e
-								.footer-development__grey-e
-								.footer-development__globe
+if (index != true)
+	footer.footer
+		.container
+			.footer-top
+				.footer-top__sidebar.hidden-xs
+					img.footer__logo(src="img/logo-dark.png", alt="")
+				.footer-top__content
+					ul.footer__menu
+						each item in mainMenu
+							li.footer__menu-item
+								a.footer__menu-item-link(href="#!") #{item}
+			.footer-bottom
+				.row
+					.col-sm-3
+						.footer-bottom__copyright 2017 © ОУ “ЦПРС ГА”
+					.col-sm-5
+						.footer-bottom__phone
+							i.fa.fa-phone.color-ruby.fa-lg
+							a.footer-bottom__phone-value(href="tel:+123") #{phone1}
+							span.footer-bottom__phone-devider ,
+							a.footer-bottom__phone-value(href="tel:+123") #{phone2}
+						.footer-bottom__address
+							i.fa.fa-map-marker.color-ruby.fa-lg
+							span.footer-bottom__address-value Московская область, г. Долгопрудный, ул. Промышленный проезд, д.14
+					.col-sm-2
+						a.footer-bottom__email(href="mailto:#{email}") 
+							i.fa.fa-envelope.color-ruby
+							| #{email}
+					.col-sm-2
+						a(href="http://www.dvaslona.com/" target="_blank")
+							.footer-development
+								.footer-development__block
+									.footer-development__img
+									.footer-development__text
+									.footer-development__red-e
+									.footer-development__grey-e
+									.footer-development__globe
+else
+	footer.footer.index-footer#section-6
+		.row
+			.col-xs-12
+				.footer-top
+					.footer-top__sidebar.hidden-xs
+						img.footer__logo(src="img/logo-dark.png", alt="")
+					.footer-top__content
+						ul.footer__menu
+							each item in mainMenu
+								li.footer__menu-item
+									a.footer__menu-item-link(href="#!") #{item}
+				.footer-bottom
+					.row
+						.col-sm-3
+							.footer-bottom__copyright 2017 © ОУ “ЦПРС ГА”
+						.col-sm-5
+							.footer-bottom__phone
+								i.fa.fa-phone.color-ruby.fa-lg
+								a.footer-bottom__phone-value(href="tel:+123") #{phone1}
+								span.footer-bottom__phone-devider ,
+								a.footer-bottom__phone-value(href="tel:+123") #{phone2}
+							.footer-bottom__address
+								i.fa.fa-map-marker.color-ruby.fa-lg
+								span.footer-bottom__address-value Московская область, г. Долгопрудный, ул. Промышленный проезд, д.14
+						.col-sm-2
+							a.footer-bottom__email(href="mailto:#{email}") 
+								i.fa.fa-envelope.color-ruby
+								| #{email}
+						.col-sm-2
+							a(href="http://www.dvaslona.com/" target="_blank")
+								.footer-development
+									.footer-development__block
+										.footer-development__img
+										.footer-development__text
+										.footer-development__red-e
+										.footer-development__grey-e
+										.footer-development__globe

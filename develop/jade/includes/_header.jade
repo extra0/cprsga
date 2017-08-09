@@ -27,5 +27,29 @@ if (index != true)
 									else
 										a.header__menu-list-item-link(href="#!") #{item}
 else
-	header.index-header(data-spy="affix" data-offset-top="0")
-		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quod neque illo animi hic eaque. Impedit velit soluta at maiores consequuntur a dolore, ex aliquam, excepturi assumenda nobis provident odio.
+	//- header.index-header(data-spy="affix" data-offset-top="0")
+	header.index-header
+		.index-header__left
+			a.index-header__left-logo(href="/")
+				img(src="img/logo.png", alt="ЦПРСГА")
+			.index-header__left-menu
+				ul.index-header__left-menu-list
+					each item in mainMenu
+						li.index-header__left-menu-list-item
+							a.index-header__left-menu-list-item-link(href="#!") #{item}
+		.index-header__top
+			.index-header__top-block
+				i.fa.fa-map-marker.color-white.pull-left.fa-lg(style="top:7px;")
+				span.index-header__top-block-address Московская область, г. Долгопрудный, ул. Промышленный проезд, д.14
+			.index-header__top-block
+				i.fa.fa-phone.color-white.fa-lg
+				a.index-header__top-block-phone(href="tel:+123") #{phone1}
+				span.index-header__top-block-devider ,
+				a.index-header__top-block-phone(href="tel:+123") #{phone2}
+			.index-header__top-block
+				i.fa.fa-envelope.color-white.fa-lg
+				a.index-header__top-block-email(href="mailto:#{email}") #{email}
+			.index-header__top-block
+				a.btn.btn-default.index-header__top-block-enter(href="javascript:void(0);" data-toggle="modal" data-target="#enter")
+					i.fa.fa-user
+					| Войти в личный кабинет

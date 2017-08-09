@@ -34,7 +34,13 @@
 .color-ruby { color: $ruby; }
 .color-black { color: #000; }
 
+.strong {font-weight: bold;}
+
 .bg-ruby { background: $ruby;}
+
+.position-static {
+	position: static;
+}
 
 body {
 	padding-right: 0 !important;
@@ -197,6 +203,23 @@ h6,
 				5%);
 			border-color: lighten($ruby,
 				5%);
+		}
+	}
+	&-warning {
+		background: #fbe400;
+		color: #000;
+		border-color: #fbe400;
+		&.btn-lg {
+			font-size: 19px;
+			font-weight: bold;
+		}
+		&:active,
+		&:active:focus,
+		&:focus,
+		&:hover {
+			color: #000;
+			background: darken(#fbe400, 5%);
+			border-color: darken(#fbe400, 5%);
 		}
 	}
 }

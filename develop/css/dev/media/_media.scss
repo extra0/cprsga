@@ -3,6 +3,7 @@
 		&.affix {
 			width: 100%;
 			z-index: 300;
+			border-bottom: 1px solid $lightBlue;
 			* {
 				@include transition(all 0.2s ease-in-out);
 			}

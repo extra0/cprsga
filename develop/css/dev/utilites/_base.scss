@@ -34,6 +34,11 @@ button, input, textarea, select {
 		pointer-events:none;
 		z-index: -1;
 	}
+	&.index {
+		&:before {
+			display: none;
+		}
+	}
 }
 .content {
 	padding-bottom: 30px;
