@@ -38,6 +38,10 @@
 		padding: 28px 0 0px 0;
 		&__copyright {
 			font-size: 20px;
+			&.index {
+				@include position(absolute, null null 0 0);
+				color: #fff;
+			}
 		}
 		&__phone {
 			margin: 8px 0 14px;
@@ -100,6 +104,9 @@
 	&-development {
 		text-align: right;
 		overflow: hidden;
+		&.index {
+			@include position(absolute, null 60px 0 null);
+		}
 		&__block {
 			display: inline-block;
 			@include filter(grayscale(100%));

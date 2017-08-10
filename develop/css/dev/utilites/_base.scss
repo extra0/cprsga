@@ -7,6 +7,12 @@ body {
     height: 100%;
     font-size: 16px;
     color: $main_color;
+    &.index {
+    	overflow: hidden;
+    	&.modal-open {
+    		padding-right: 0 !important;
+    	}
+    }
 }
 
 label {
@@ -42,4 +48,10 @@ button, input, textarea, select {
 }
 .content {
 	padding-bottom: 30px;
+}
+.main-content {
+	height: 100vh
+}
+.onepage-pagination {
+	display: none;
 }

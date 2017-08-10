@@ -6,7 +6,7 @@ block append head
 	- index = true
 block content
 	// первый экран
-	section.index-section.index-section--plane#section-1
+	section.section.index-section.index-section--plane#section1.active
 		.index-section__center
 			.slider-section
 				.slider-section__block
@@ -34,110 +34,110 @@ block content
 				span.index-section__advantages-block-title Доступные цены<br>и стипендии
 	// / первый экран
 	// второй экран
-	section.index-section.index-section--plane-second#section-2(style="background: url(../img/content/index-2.jpg) 0 0 no-repeat;")
+	section.section.index-section.index-section--plane-second#section2(style="background: url(../img/content/index-2.jpg) 0 0 no-repeat;")
 		.index-section__center
 			.index-section__title Наши курсы
 			.course-section
-				a.course-section__block.col-sm-4(href="#!")
+				a.course-section__block.col-sm-4.col-xs-12(href="#!")
 					img.course-section__block-img(src="img/c-1.png", alt="")
 					.course-section__block-description
 						span.course-section__block-description-title Служба ПАСОП
 						span.course-section__block-description-text Поисковые и аварийные спасательное обеспечение самолета
-				a.course-section__block.col-sm-4.course-section__block--bg-blue(href="#!")
+				a.course-section__block.col-sm-4.col-xs-12.course-section__block--bg-blue(href="#!")
 					img.course-section__block-img(src="img/c-2.png", alt="")
 					.course-section__block-description
 						span.course-section__block-description-title Служба ИАС
 						span.course-section__block-description-text Инженерно-авиационная
-				a.course-section__block.col-sm-4(href="#!")
+				a.course-section__block.col-sm-4.col-xs-12(href="#!")
 					img.course-section__block-img(src="img/c-3.png", alt="")
 					.course-section__block-description
 						span.course-section__block-description-title Служба ПДСП
 						span.course-section__block-description-text Производственно-диспечерская
-				a.course-section__block.col-sm-4.course-section__block--bg-yellow(href="#!")
+				a.course-section__block.col-sm-4.col-xs-12.course-section__block--bg-yellow(href="#!")
 					img.course-section__block-img(src="img/c-4.png", alt="")
 					.course-section__block-description
 						span.course-section__block-description-title Пожарная безопасность
 						span.course-section__block-description-text Руководящийсостав и специалистов в области пож. безопасности и пожарно-технического минимума
-				a.course-section__block.col-sm-4(href="#!")
+				a.course-section__block.col-sm-4.col-xs-12(href="#!")
 					img.course-section__block-img(src="img/c-5.png", alt="")
 					.course-section__block-description
 						span.course-section__block-description-title Преподаватели- инструкторы авиакомпаний
-				a.course-section__block.col-sm-4.course-section__block--bg-red(href="#!")
+				a.course-section__block.col-sm-4.col-xs-12.course-section__block--bg-red(href="#!")
 					img.course-section__block-img(src="img/c-6.png", alt="")
 					.course-section__block-description
 						span.course-section__block-description-title Руководящий состав и специалистов в области чрезвычайных ситуаций
-				a.course-section__block.col-sm-4(href="#!")
+				a.course-section__block.col-sm-4.col-xs-12(href="#!")
 					img.course-section__block-img(src="img/c-7.png", alt="")
 					.course-section__block-description
 						span.course-section__block-description-title Руководящее звено авиакомпаний и аэропортов
-				a.course-section__block.col-sm-4.course-section__block--bg-blue(href="#!")
+				a.course-section__block.col-sm-4.col-xs-12.course-section__block--bg-blue(href="#!")
 					img.course-section__block-img(src="img/c-8.png", alt="")
 					.course-section__block-description
 						span.course-section__block-description-title Руководящий состав и специалистов в области электро- безопасности
-				a.course-section__block.col-sm-4(href="#!")
+				a.course-section__block.col-sm-4.col-xs-12(href="#!")
 					img.course-section__block-img(src="img/c-9.png", alt="")
 					.course-section__block-description
 						span.course-section__block-description-title Руководящий состав и специалистов в области охраны труда
 	// / второй экран
 	// третий экран
-	section.index-section#section-3(style="background: url(../img/content/index-3.jpg) 0 0 no-repeat;")
+	section.section.index-section#section3(style="background: url(../img/content/index-3.jpg) 0 0 no-repeat;")
 		.index-section__center
 			.index-section__title ЦПРС в цифрах
-			.counts-section
+			.counts-section.numeric-data
 				.counts-section__block
-					span.counts-section__block-number 189
+					span.counts-section__block-number(spincrement) 189
 					span.counts-section__block-text аэропортов
 				.counts-section__block
-					span.counts-section__block-number 25000
+					span.counts-section__block-number(spincrement) 25000
 					span.counts-section__block-text учеников
 				.counts-section__block
-					span.counts-section__block-number 38
+					span.counts-section__block-number(spincrement) 38
 					span.counts-section__block-text специалистов
 				.counts-section__block
-					span.counts-section__block-number 20
+					span.counts-section__block-number(spincrement) 20
 					span.counts-section__block-text лет работы
 			.course-form
-				.course-form__top
-					a.course-form__top-step.active(href="#!") .01  Выберите курс
-					a.course-form__top-step(href="#!") .02  Оставьте заявку
-					a.course-form__top-step(href="#!") .03  Начинайте обучение
+				//- .course-form__top
+				//- 	a.course-form__top-step.active(href="#!") .01  Выберите курс
+				//- 	a.course-form__top-step(href="#!") .02  Оставьте заявку
+				//- 	a.course-form__top-step(href="#!") .03  Начинайте обучение
+				br
+				br
 				.course-form__bottom
 					.course-form__bottom-block
 						.course-form__bottom-block-slider
 							- for (i=1;i<=4;i++) {
 								.course-form__bottom-block-slider-item
-									.course-form__bottom-block-slider-item-img-wrap.col-sm-5(style="background: url(../img/content/list.jpg) center no-repeat;")
-									.course-form__bottom-block-slider-item-description.col-sm-7
-										span.course-form__bottom-block-slider-item-description-title Название курса
+									a.course-form__bottom-block-slider-item-img-wrap.col-sm-5.col-xs-5.col-xxs-12(href="#!" style="background: url(../img/content/list.jpg) center no-repeat;")
+									.course-form__bottom-block-slider-item-description.col-sm-7.col-xs-7.col-xxs-12
+										a.course-form__bottom-block-slider-item-description-title(href="#!") Название курса
 										span.course-form__bottom-block-slider-item-description-text Руководящийсостав и специалистов в области пож. безопасности и пожарно-технического минимума
 										span.course-form__bottom-block-slider-item-description-price
 											| 35 000 
 											small
 												i.fa.fa-rub
 							- }
-					.course-form__bottom-block
-					.course-form__bottom-block
 	// / третий экран
 	// четвертый экран
-	section.index-section.index-section--plane-four#section-4(style="background: url(../img/content/index-4.jpg) 0 0 no-repeat;")
+	section.section.index-section.index-section--plane-four#section4(style="background: url(../img/content/index-4.jpg) 0 0 no-repeat;")
 		.index-section__center
 			.index-section__title С нами удобнее
 			.extra-advantages
-				.extra-advantages__block.extra-advantages__block--bg-white.col-sm-6
+				.extra-advantages__block.extra-advantages__block--bg-white.col-sm-6.col-xs-12
 					img.extra-advantages__block-img(src="img/e-advantages-1.png", alt="")
 					span.extra-advantages__block-text Обучение в классах<br>и дистанционное обечение
-				.extra-advantages__block.col-sm-6
+				.extra-advantages__block.col-sm-6.col-xs-12
 					img.extra-advantages__block-img(src="img/e-advantages-2.png", alt="")
 					span.extra-advantages__block-text Комплексное решение<br>по обучению СПАСОП
-				.extra-advantages__block.col-sm-6
+				.extra-advantages__block.col-sm-6.col-xs-12
 					img.extra-advantages__block-img(src="img/e-advantages-2.png", alt="")
 					span.extra-advantages__block-text Минимум<br>бюрократии
-				.extra-advantages__block.extra-advantages__block--bg-white.col-sm-6
+				.extra-advantages__block.extra-advantages__block--bg-white.col-sm-6.col-xs-12
 					img.extra-advantages__block-img(src="img/e-advantages-3.png", alt="")
 					span.extra-advantages__block-text Выезд преподавателя<br>в течении недели
 	// / четвертый экран	
 	// пятый экран
-	section.index-section#section-5
+	section.section.index-section#section5
 		.index-section__center
 			.row
 				.col-sm-6.position-static
@@ -160,4 +160,13 @@ block content
 						.text-center
 							p.index-section__description-text Михаил Каширцев
 						img.index-section__description-img(src="img/signature.png", alt="")
+			.footer-bottom__copyright.index 2017 © ОУ “ЦПРС ГА”
+			a(href="http://www.dvaslona.com/" target="_blank")
+				.footer-development.index
+					.footer-development__block
+						.footer-development__img
+						.footer-development__text
+						.footer-development__red-e
+						.footer-development__grey-e
+						.footer-development__globe
 	// / пятый экран

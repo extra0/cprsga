@@ -2,7 +2,9 @@ doctype html
 include _vars
 html(lang="ru")
 	include _head
-	body
+	body(class="#{index == true ? 'index':''}")
+		if (index == true)
+			.preloader
 		.main-wrapper
 			// шапка 
 			include _header
@@ -11,9 +13,9 @@ html(lang="ru")
 			.main-content
 				block content
 			// конец контент
-		// футер
-		include _footer
-		// конец футер
+			// футер
+			include _footer
+			// конец футер
 		// модальные окна
 		include _modals
 		// конец модальные окна

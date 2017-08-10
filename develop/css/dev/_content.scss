@@ -12,7 +12,7 @@
 			padding: 47px 37px 47px 50px;
 			overflow: auto;
 			&-menu {
-				margin-top: 58px;
+				margin-top: 6vh;
 				&-list {
 					list-style-type: none;
 					padding: 0;
@@ -20,7 +20,7 @@
 					&-item {
 						display: block;
 						&:not(:last-child) {
-							margin-bottom: 51px;
+							margin-bottom: 4vh;
 						}
 						&-link{
 							border-bottom: 1px solid transparent;
@@ -118,6 +118,7 @@
 		position: relative;
 		padding: 180px 0 40px 465px;
 		background: #172e38;
+		overflow: hidden;
 		&:before {
 			content: '';
 			@include position(absolute, 0 null null 0);
@@ -211,6 +212,19 @@
 			&__menu {
 				&-item {
 					width: 23%;
+				}
+			}
+			&-top {
+				&__content {
+					padding: 0px 0px 0px 109px;
+				}
+			}
+			&-bottom {
+				&__phone {
+					 margin: 8px 0 14px -40px
+				}
+				&__address {
+					margin: 0 0 0 -40px
 				}
 			}
 		}
@@ -730,7 +744,7 @@
 	}
 	&__block {
 		&-item {
-			padding: 18% 0 40px 465px;
+			padding: 32vh 0 40px 465px;
 			height: 100vh;
 			background-size: cover!important;
 			&:before {
@@ -916,12 +930,16 @@
 				text-transform: uppercase;
 				letter-spacing: 1px;
 				line-height: 23px;
+				max-height: 46px;
+				overflow: hidden;
 			}
 			&-preview {
 				font-weight: 300;
 				margin: 0;
 				display: block;
 				color: #fff;
+				overflow: hidden;
+				max-height: 44px;
 			}
 		}
 	}
@@ -1031,6 +1049,12 @@
 							font-weight: 300;
 							display: block;
 							margin: 0 0 10px;
+							@include transition(all 0.2s ease-in-out);
+							&:hover,
+							&:focus {
+								color: $ruby!important;
+								text-decoration: none;
+							}
 						}
 						&-text {
 							font-weight: 300;
@@ -1046,4 +1070,12 @@
 			}
 		}
 	}
+}
+.preloader {
+	display: block;
+	position: fixed;
+	z-index: 10000;
+	width: 100%;
+	height: 100%;
+	background: rgba(28,36,57,1) url(../img/preloader.gif) center center no-repeat;
 }
