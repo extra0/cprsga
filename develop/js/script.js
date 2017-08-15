@@ -55,24 +55,10 @@ $(function(){
 		adaptiveHeight: true
 	});
 
-
-	
-	// останавливаем скролл header
-	// $(window).on('scroll load', function(){
-	// 	var footerScroll = $('.footer').offset().top,
-	// 		bodyScroll = $(window).scrollTop();
-	// 	if (bodyScroll + $(window).height() >= footerScroll) {
-	// 		$('.index-header').attr('style', 'top:'+ (-(bodyScroll + $(window).height() - footerScroll) -1) +'px;');
-	// 	} else {
-	// 		$('.index-header').attr('style', 'top:0px;');
-	// 	}
-	// });
-
-
 	// доскролл до блоков
-	if ($(window).width() > 991) {
+	if ($(window).width() > 991 && $(".main-content").hasClass('index')) {
 		var i = 0;
-		$(".main-content").onepage_scroll({
+		$(".main-content.index").onepage_scroll({
 		  sectionContainer: "section",
 		  responsiveFallback: false,
 		  loop: false,

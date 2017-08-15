@@ -50,7 +50,9 @@ button, input, textarea, select {
 	padding-bottom: 30px;
 }
 .main-content {
-	height: 100vh
+	&.index {
+		height: 100vh
+	}
 }
 .onepage-pagination {
 	display: none;

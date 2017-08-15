@@ -10,7 +10,7 @@ html(lang="ru")
 			include _header
 			// конец шапка
 			// контент
-			.main-content
+			.main-content(class="#{index == true ? 'index':''}")
 				block content
 			// конец контент
 			// футер
