@@ -39,7 +39,7 @@
 		&__copyright {
 			font-size: 20px;
 			&.index {
-				@include position(absolute, null null 0 0);
+				@include position(absolute, null null 20px 0);
 				color: #fff;
 			}
 		}
@@ -84,7 +84,7 @@
 			}
 		}
 		&__email {
-			font-size: 20px;
+			font-size: 19px;
 			color: $main-color;
 			margin-right: -10px;
 			border-bottom: 1px solid $ruby;
@@ -105,7 +105,7 @@
 		text-align: right;
 		overflow: hidden;
 		&.index {
-			@include position(absolute, null 60px 0 null);
+			@include position(absolute, null 60px 20px null);
 		}
 		&__block {
 			display: inline-block;

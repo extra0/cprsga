@@ -27,6 +27,9 @@
 			}
 		}
 	}
+	h1, .h1 {
+		font-size: 40px;
+	}
 }
 @media (max-width: 767px) {
 	body {
@@ -418,6 +421,7 @@
 @media (min-width: 1200px) {
 	.header {
 		&.affix {
+			padding-top: 15px;
 			.header {
 				&__menu {
 					margin-top: 15px;
@@ -435,7 +439,7 @@
 				}
 				
 				&__phones {
-					margin: -11px 0 5px -85px;
+					margin: -11px 0 5px 0;
 					&-value {
 						font-size: 20px;
 						margin-left: 20px;
@@ -1426,5 +1430,91 @@
 	.index-section__center .col-sm-5.col-sm-offset-1 {
 		margin-left: 0;
 		width: 50%;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1999px) {
+	.container {
+		width: auto
+	}
+	.flex-section__sidebar {
+		margin-left: -15px;
+	}
+	.header {
+		&__link {
+			&--user {
+				float: right;
+			}
+		}
+		&__address {
+			max-width: 380px;
+		}
+		&__phones {
+			max-width: 340px;
+			float: right;
+			&:before {
+				display: none;
+			}
+			&-value {
+				&:first-child {
+					position: relative;
+					&:before {
+						content: "";
+						position: absolute;
+						top: 9px;
+						left: -34px;
+						display: inline-block;
+						font: normal normal normal 14px/1 FontAwesome;
+						font-size: inherit;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						color: #f33;
+						font-size: 23px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 2000px) {
+	.container {
+		width: 1970px;
+	}
+	.header {
+		&__link {
+			&--user {
+				float: right;
+			}
+		}
+		&__address {
+			max-width: 380px;
+		}
+		&__phones {
+			max-width: 340px;
+			float: right;
+			&:before {
+				display: none;
+			}
+			&-value {
+				&:first-child {
+					position: relative;
+					&:before {
+						content: "";
+						position: absolute;
+						top: 9px;
+						left: -34px;
+						display: inline-block;
+						font: normal normal normal 14px/1 FontAwesome;
+						font-size: inherit;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						color: #f33;
+						font-size: 23px;
+					}
+				}
+			}
+		}
 	}
 }

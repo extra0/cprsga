@@ -225,7 +225,7 @@ h6,
 }
 
 // ==== Формы ====
-input[type="checkbox"] {
+.main-wrapper input[type="checkbox"] {
 	display: none;
 	& + label {
 		color: $main-color;
@@ -261,7 +261,7 @@ input[type="checkbox"] {
 	}
 }
 
-input[type="radio"] {
+.main-wrapper input[type="radio"] {
 	display: none;
 	& + label {
 		color: $main-color;
